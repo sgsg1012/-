@@ -12,7 +12,6 @@ namespace WindowsCalculator
 {
     public partial class Form1 : Form
     {
-        char op = '+';
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +21,8 @@ namespace WindowsCalculator
         {
             string a_str = this.input1.Text;
             string b_str = this.input2.Text;
+            string op_str = this.comboBox1.Text;
+            char op = '+';
 
             int a, b;
             int res=0;
@@ -29,9 +30,10 @@ namespace WindowsCalculator
             try {
                 a = int.Parse(a_str);
                 b = int.Parse(b_str);
+                op = op_str[0];
             }
             catch {
-                MessageBox.Show("操作数不合法", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("操作数或操作符不合法", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             switch (op)
@@ -59,42 +61,6 @@ namespace WindowsCalculator
             }
             this.resLabel.Text = res.ToString();
 
-        }
-
-        
-
-        private void input1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void input2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void result_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void add_CheckedChanged_1(object sender, EventArgs e)
-        {
-            op = '+';
-        }
-
-        private void sub_CheckedChanged(object sender, EventArgs e)
-        {
-            op = '-';
-        }
-
-        private void multi_CheckedChanged(object sender, EventArgs e)
-        {
-            op = '*';
-        }
-
-        private void div_CheckedChanged(object sender, EventArgs e)
-        {
-            op = '/';
         }
     }
 }
