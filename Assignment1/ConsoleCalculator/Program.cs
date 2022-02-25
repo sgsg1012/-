@@ -72,11 +72,15 @@ namespace ConsoleCalculator
                     res = a * b;
                     break;
                 case '/':
+                    if(b==0)
+                    {
+                        Console.WriteLine("除数不能为0");
+                        return;
+                    }
                     res = a / b;
                     break;
                 default:
                     Console.WriteLine("请输入加减乘除运算符");
-                    Console.ReadKey();
                     return;
                     break;
             }
