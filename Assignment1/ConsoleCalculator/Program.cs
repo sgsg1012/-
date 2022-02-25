@@ -8,7 +8,6 @@ namespace ConsoleCalculator
 {
     class Program
     {
-
         static void calculate()
         {
             Console.WriteLine("请输入两个操作数:");
