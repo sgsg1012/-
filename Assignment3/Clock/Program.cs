@@ -6,6 +6,7 @@ using System.Threading;
 
 namespace Clock
 {
+    
     /*
      * 闹钟
      * 功能：tick 整分报时 闹钟
