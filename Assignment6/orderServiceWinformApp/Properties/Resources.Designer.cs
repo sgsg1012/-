@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace orderServiceWinformApp.Properties
+namespace OrderServiceWinformApp.Properties
 {
     /// <summary>
     ///   强类型资源类，用于查找本地化字符串等。
@@ -43,7 +43,7 @@ namespace orderServiceWinformApp.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("orderServiceWinformApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OrderServiceWinformApp.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
